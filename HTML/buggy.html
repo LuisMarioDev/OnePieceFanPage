@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/82848488b73a87d72f2436c02b9ab608?family=ONE+PIECE"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>One Piece Store</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <header class="encabezado">
+        <img src="../img/logo.png" alt="One Piece Logo" class="logo" />
+        <span>STORE</span>
+        <!-- Botón de silencio -->
+    <button id="mute-button" class="mute-button">
+      <i class='bx bx-volume-full'></i>
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../HTML/tienda.html">Comprar</a></li>
+        <li><a href="../HTML/videos.html">Videos</a></li>
+        <li><a href="../html/caps.html">Los mejores capitulos</a></li>
+      </ul>
+    </nav>
+
+      </header>
+
+
+
+
+  </div>
+  <div class="btn-left">
+  </div>
+  <div class="btn-right">
+  </div>
+</div>
+</div>
+
+
+
+    <!-- AQUI EMPIEZA LA DESCRIPCIÓN DE PERSONAJES SELECCIONADOS CON MAP -->
+
+    <div class="promo-section">
+      <div class="promo-content">
+        <aside class="image-promo">
+          <img src="../img/buggy.webp" alt="Promo Image" class="promo-image" />
+          <center><b><h2 class="desc">Buggy</h2></b></center>
+        </aside>
+
+        <div class="promo-details">
+          <h2>Buggy</h2>
+          <p>
+            Buggy da un discurso
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RRi-iACHkrE?si=LJKPwjzBOTeG1681" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>
+            Buggy el Payaso Estrella es el capitán de los Piratas de Buggy inicialmente conocido como Buggy el Payaso, y uno de los Cuatro Emperadores que rigen los mares del Nuevo Mundo. Es también el colíder de la Alianza de Buggy y Alvida, además de un antiguo aprendiz pirata de los Piratas de Roger. Poco después de la Guerra en la Cumbre de Marineford, se convirtió en miembro de los Siete Señores de la Guerra del Mar y en el presidente de la organización de envíos piratas Buggy's Delivery. Más tarde perdió su título de Señor de la Guerra cuando el sistema se disolvió, pero luego fue reconocido como uno de los Cuatro Emperadores tras la caída de Kaidou y Big Mom y se convirtió en miembro fundador de Cross Guild, actuando como su líder.
+
+            Debido a su papel y acciones el antagonista principal del arco de la ciudad Orange y puede considerarse el antagonista secundario del arco de Loguetown, siendo uno de los antagonistas centrales de la saga del East Blue. Desde entonces se ha convertido en un personaje muy recurrente en la serie. También es el personaje principal de la minihistoria aventura de la tripulación de Buggy. A pesar de su rivalidad con Luffy, se convirtió temporalmente en uno de sus principales aliados durante los arcos de Impel Down y Marineford.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="wave-container">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <!-- Agregar audio -->
+    <audio id="audio-player" autoplay loop>
+      <source src="../audio/overtaken.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button class="boton-audio" onclick="document.getElementById('audio-player').play()">Reproducir Audio</button>
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/audio.js"></script>
+  </body>
+
+  <footer>
+    <b><h4>Todos los derechos reservados.</h4></b>
+  </footer>
+</html>

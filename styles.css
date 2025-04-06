@@ -1,0 +1,853 @@
+@import url(https://db.onlinewebfonts.com/c/82848488b73a87d72f2436c02b9ab608?family=ONE+PIECE);
+@font-face {
+  font-family: "ONE PIECE";
+  src: url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.eot");
+  src: url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.svg#ONE PIECE")
+      format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el menú de navegación */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Empuja el menú a la derecha */
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espacio entre los elementos del menú */
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+  font-family: "ONE PIECE";
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.promo-videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  width:100%;
+}
+
+.promo-content-videos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+
+.nav-menu a:hover {
+  color: #000; /* Cambia el color al pasar el mouse */
+}
+
+/* Ajuste del encabezado para acomodar el menú */
+header.encabezado {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  padding-left: 50px;
+  align-items: center;
+  margin-bottom: 20px;
+  color: red;
+  font-size: 100px;
+  font-family: "ONE PIECE";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.encabezado .logo {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mute-button {
+  margin-left: auto;
+}
+
+.mute-button i {
+  font-size: 40px;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(to bottom, #45caff 0%, #3fe2ff 50%, #ffffff 100%);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./img/emblemblue.jpg") center/contain repeat;
+  opacity: 0.2; /* Ajusta la opacidad para la transparencia deseada */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+header.encabezado {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  padding-left: 50px;
+  align-items: center;
+  margin-bottom: 20px;
+  color: red;
+  font-size: 100px;
+  font-family: "ONE PIECE";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.encabezado .logo {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+span {
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  border-radius: 50px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carrusel {
+  width: 900%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 0%;
+}
+
+.slide{
+  border-radius: 50px;
+}
+
+.carrito{
+  font-size: 50px;
+  color: red;
+}
+
+.icon-cart{
+  width: 40px;
+  height: 40px;
+  stroke: white;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+.container-icon {
+  position: absolute;
+  top:120px;
+  right: 10px;
+  z-index: 1000;
+}
+
+
+
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: white;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 15px;
+  font-weight: 1000px;
+  color: black;
+}
+
+.container-cart-products{
+  position: relative;
+  top: 20px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.precio-producto-carrito{
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover{
+  stroke: red;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.cart-total h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-pagar{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hidden-cart{
+  display: none;
+}
+
+
+
+
+/* Main */
+.container-items{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.item{
+  border-radius: 10px;
+  background-color: rgb(255, 187, 0);
+  color: white;
+
+}
+
+.item:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+.item figure{
+  overflow: hidden;
+}
+
+.item:hover img{
+  transform: scale(1.2);
+}
+
+.info-product{
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para el contenido */
+
+}
+
+.price{
+  font-size: 18px;
+  font-weight: 900;
+  color: black;
+}
+
+.info-product button{
+  border: none;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.slider-section {
+  position: relative;
+  width: calc(100% / 9);
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.slide-title {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 0, 0);
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "ONE PIECE";
+  font-size: 3rem;
+  display: none;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 10px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.slider-section.active .slide-title {
+  display: block;
+}
+
+/* styles.css */
+.mute-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: red;
+  z-index: 1000;
+}
+
+.mute-button i {
+  font-size: 40px;
+}
+
+
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 500px;
+  background-color: transparent ;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  transform: translate(0, -50%);
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: rgb(2, 1, 0);
+  color: white;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+.izquierda,
+.derecha {
+  font-size: 50px;
+}
+
+.promo-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0;
+  align-items: center;
+  position: relative; /* Añadido para posicionar correctamente el pseudo-elemento */
+}
+
+.promo-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: url("./img/emblem2.png") center/cover no-repeat; */
+  opacity: 0.2; /* Ajusta la opacidad para la transparencia deseada */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.promo-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: black;
+  border: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para el contenido */
+  position: relative; /* Para asegurar que los elementos internos se posicionen correctamente */
+  z-index: 1; /* Para asegurarse de que el contenido esté encima del fondo */
+}
+
+.promo-content::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+  border: 5px;
+  border-color: black;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: 0.5px solid transparent;
+  z-index: -1; /* Para asegurarse de que el pseudo-elemento esté detrás del contenido */
+}
+
+
+.image-promo{
+  padding: 70px;
+}
+
+.promo-image {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 5px solid transparent;
+  background-image: linear-gradient(white, white),
+  radial-gradient(
+    circle at top left,
+    rgb(255, 13, 13),
+    rgb(255, 51, 0),
+    rgb(255, 166, 0)
+  );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.desc{
+  font-family: "ONE PIECE";
+}
+
+.promo-image:hover {
+  transform: scale(1.01);
+}
+
+
+.promo-details {
+  flex: 1;
+}
+
+.cart-count {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800px;
+}
+
+.promo-inventory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.inventory-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  background-color: rgb(255, 196, 0);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover .product-image {
+  transform: scale(1.1);
+}
+
+.product-title {
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.add-to-cart {
+  background-color: #b30202;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.boton-audio {
+  background-color: #b30202;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.add-to-cart:hover {
+  background-color: #ff6347;
+}
+
+/* styles.css */
+
+/* Cart styles */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+}
+
+.close-cart {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.cart-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-item span{
+  font-size: 15px;
+}
+
+.remove-from-cart {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-from-cart:hover {
+  background-color: #ff6347;
+}
+
+#checkout {
+  background-color: rgb(0, 110, 255);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#checkout:hover {
+  background-color: #45a049;
+}
+
+
+
+
+footer {
+  font-size: 15px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+h2{
+  color: black;
+}
+
+.promo-details h2 {
+  font-family: "ONE PIECE";
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.promo-details p {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.promo-content iframe {
+  width: 650px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  top: -150px;
+  bottom: 0;
+  width: 200%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+  border-radius: 43%;
+  animation: wave-animation 10s infinite ease-in-out; /* Agregado ease-in-out */
+}
+
+.wave:nth-child(2) {
+  animation-delay: -2s;
+  opacity: 0.5;
+}
+
+.wave:nth-child(3) {
+  animation-delay: -4s;
+  opacity: 0.3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+main {
+  padding: 20px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.container-cart-products {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #f8f9fa;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-cart {
+  display: none;
+}
+
+
+
+@keyframes wave-animation {
+  0% {
+    transform: translate3d(-50%, 100%, 0) scaleY(1) scaleX(1.25);
+  }
+  50% {
+    transform: translate3d(50%, 0%, 0) scaleY(0.75) scaleX(1);
+  }
+  100% {
+    transform: translate3d(-50%, -100%, 0) scaleY(1) scaleX(1.25);
+  }
+}

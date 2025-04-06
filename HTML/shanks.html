@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/82848488b73a87d72f2436c02b9ab608?family=ONE+PIECE"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>One Piece Store</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <header class="encabezado">
+        <img src="../../../img/logo.png" alt="One Piece Logo" class="logo" />
+        <span>STORE</span>
+        <!-- Botón de silencio -->
+    <button id="mute-button" class="mute-button">
+      <i class='bx bx-volume-full'></i>
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../HTML/tienda.html">Comprar</a></li>
+        <li><a href="../HTML/videos.html">Videos</a></li>
+        <li><a href="../html/caps.html">Los mejores capitulos</a></li>
+      </ul>
+    </nav>
+
+      </header>
+
+
+  </div>
+  <div class="btn-left">
+  </div>
+  <div class="btn-right">
+  </div>
+</div>
+</div>
+
+
+
+    <!-- AQUI EMPIEZA LA DESCRIPCIÓN DE PERSONAJES SELECCIONADOS CON MAP -->
+
+    <div class="promo-section">
+      <div class="promo-content">
+        <aside class="image-promo">
+          <img src="../img/shanks.jpeg" alt="Promo Image" class="promo-image" />
+          <center><b><h2 class="desc">Shanks</h2></b></center>
+        </aside>
+
+        <div class="promo-details">
+          <h2>Shanks</h2>
+          <p>
+            Shanks derroto a kid sin contar con fruta con puro Haki
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qmAHP90yhQs?si=FGQsb1VbUWGXOxqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>
+            Shanks el Pelirrojo, es el capitán de los Piratas del Pelirrojo y uno de los Cuatro Emperadores que gobiernan el Nuevo Mundo. Fue, además, un miembro de la legendaria tripulación de Gol D. Roger, siendo la única banda que logró conquistar con éxito todo Grand Line.
+            Es el hombre que inspiró a Luffy a seguir su sueño de ser el Rey de los Piratas, y el que encontró la fruta Gomu Gomu que Luffy comió accidentalmente. Es también el padre adoptivo de Uta.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="wave-container">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <!-- Agregar audio -->
+    <audio id="audio-player" autoplay loop>
+      <source src="../audio/overtaken.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button class="boton-audio" onclick="document.getElementById('audio-player').play()">Reproducir Audio</button>
+
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/audio.js"></script>
+  </body>
+
+  <footer>
+    <b><h4>Todos los derechos reservados.</h4></b>
+  </footer>
+</html>
